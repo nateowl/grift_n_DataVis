@@ -32,7 +32,7 @@ with open('OlympicsWinter.csv') as csvfile:
 
 			else:
 				if (row[0] == "1924") and (row[4] == "CAN"):
-					print("1924 edal fo canada!")
+					print("1924 medal fo canada!")
 					m_1924 += 1
 				elif (row[0] == "1948") and (row[4] == "CAN"):
 					print("1948 medal fo canada!")
