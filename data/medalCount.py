@@ -1,11 +1,11 @@
-import csv 
+import csv
 import matplotlib.pyplot as plt
 
 # total medal trends - sample some years (20 year increments)
 
 # 1924, 1948, 1968, 1984, 2006, 2014
 # columns 0 (year) and column 4 (country)
-# 
+#
 m_1924 = 0
 m_1948 = 0
 m_1968 = 0
@@ -13,7 +13,7 @@ m_1984 = 0
 m_2006 = 0
 m_2014 = 0
 
-#remove row 1 because it is 
+#remove row 1 because it is
 categories = []
 
 
@@ -25,10 +25,10 @@ with open('OlympicsWinter.csv') as csvfile:
 
 #removing the first line of code so that it isn't included in our chart.
 	for row in reader:
-			if line_count is 0:
+			if line_count == 0:
 				#parse the first row of the text data out of the file
 				categories.append(row)
-				line_count += 1 
+				line_count += 1
 
 			else:
 				if (row[0] == "1924") and (row[4] == "CAN"):
@@ -59,6 +59,3 @@ plt.xlabel("Olympic Year")
 plt.ylabel("Medals by Year")
 plt.title("Medals Sampled by 20 Year Increments")
 plt.show()
-
-
-
