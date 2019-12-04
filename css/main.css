@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+/* Main Css*/
+body {
+  font-family: Lucida, sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 20px;
+  height: 70px;
+  border-bottom: 1px solid #333;
+}
+
+header div {
+  width: 33%;
+}
+.logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.subtitle {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 5px;
+  font-size: 14px;
+  font-weight: 700;
+  width: 200px;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.gold {
+  color: #dfa815;
+}
+.flag {
+  display: flex;
+  justify-content: flex-end;
+}
